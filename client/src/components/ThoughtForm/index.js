@@ -32,6 +32,7 @@ const ThoughtForm = () => {
     // clear form value
     setFormState({ username: '', thought: '' });
     setCharacterCount(0);
+    window.location.reload('/'); //added to render again the page when a post it submitted
   };
 
   return (

@@ -32,7 +32,7 @@ const Profile = props => {
       setIsLoaded(true);
     }
     fetchData();
-  }, []);
+  }, [userParam]);
 
   return (
     <div>
