@@ -13,7 +13,8 @@ const table = "Thoughts";
 // get all users' thoughts
 router.get('/users', (req, res) => {
   const params = {
-    TableName: table
+    TableName: table,
+    ScanIndexForward: false
   };
   dynamodb.scan(params, (err, data) => {
     if (err) {
@@ -38,7 +39,8 @@ router.get('/users/:username', (req, res) => {
     ExpressionAttributeValues: {
       ":user": req.params.username
     },
-    ProjectionExpression: "#th, #ca"
+    ProjectionExpression: "#th, #ca",
+    ScanIndexForward: false
   };
 
   dynamodb.query(params, (err, data) => {

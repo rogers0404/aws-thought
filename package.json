@@ -1,7 +1,7 @@
 {
-  "name": "mern-social-media",
+  "name": "mern-social-media-aws",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description",
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -26,5 +26,13 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogers0404/aws-thought.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogers0404/aws-thought/issues"
+  },
+  "homepage": "https://github.com/rogers0404/aws-thought#readme"
 }
